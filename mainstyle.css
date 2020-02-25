@@ -15,6 +15,11 @@ li {
     list-style-type: none;
 }
 
+input {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 .red {
     color: rgba(241, 109, 127, 1);
 }
@@ -135,7 +140,6 @@ li {
 
 .header_input {
     width: 261px;
-    padding-left: 16px;
 }
 
 .button {
@@ -148,6 +152,7 @@ li {
 
 .button:hover {
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 
 .button:active {
@@ -210,32 +215,38 @@ li {
 .category {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 88px 0;
 }
 
 .banners_left,
 .banners_right {
     width: 560px;
-    margin: 98px 0;
+    margin: 10px 0;
 }
 
 .banner_1 {
     background-image: url(img/banner_1.jpg);
     height: 542px;
+    width: 560px;
 }
 
 .banner_2 {
     background-image: url(img/banner_2.jpg);
     height: 261px;
+    width: 560px;
 }
 
 .banner_3 {
     background-image: url(img/banner_3.jpg);
     height: 261px;
+    width: 560px;
 }
 
 .banner_4 {
     background-image: url(img/banner_4.jpg);
     height: 542px;
+    width: 560px;
 }
 
 .banner {
@@ -243,6 +254,10 @@ li {
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.margin_r_20 {
+    margin-right: 20px;
 }
 
 .banner_last {
@@ -337,7 +352,7 @@ li {
 
 .product_link:hover .product_bg_hover,
 .product_link:hover .product_hover {
-    visibility: visible;
+    display: flex;
 }
 
 .product_link:active .product_hover {
@@ -364,11 +379,11 @@ li {
     top: 97px;
     padding: 15px;
     border: 1px solid white;
-    visibility: hidden;
+    display: none;
 }
 
 .product_bg_hover {
-    visibility: hidden;
+    display: none;
 }
 
 .feature {
@@ -407,18 +422,18 @@ li {
 .feature_h5 {
     display: inline;
     font-size: 20px;
-font-weight: bold;
-color: rgba(251, 251, 251, 1);
-letter-spacing: 0.03em;
+    font-weight: bold;
+    color: rgba(251, 251, 251, 1);
+    letter-spacing: 0.03em;
     margin-left: 30px;
 }
 
 .feature_p {
     font-size: 14px;
-font-weight: 300;
-color: rgba(251, 251, 251, 1);
-letter-spacing: 0.03em;
-line-height: 24px;
+    font-weight: 300;
+    color: rgba(251, 251, 251, 1);
+    letter-spacing: 0.03em;
+    line-height: 24px;
     margin-left: 75px;
 }
 
@@ -431,4 +446,205 @@ line-height: 24px;
 .feature_text {
     padding: 26px;
     padding-left: 36px;
+    width: 298px;
+}
+
+.subscribe {
+    background-image: url(img/subscribe_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 438px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.citation {
+    border-right: 1px solid rgba(220, 220, 220, 1);
+    display: flex;
+    padding-top: 111px;
+}
+
+.citation_content {
+    padding-left: 28px;
+    padding-top: 12px;
+    width: 400px;
+    margin-right: 26px;
+}
+
+.citation_bin_burhan {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgba(34, 34, 36, 1);
+    letter-spacing: 0.03em;
+    line-height: 26px;
+}
+
+.h5_name_citation {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    line-height: 26px;
+    padding-top: 10px;
+}
+
+.h6_name_citation {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(34, 34, 36, 1);
+    letter-spacing: 0.03em;
+    line-height: 14px;
+    margin-bottom: 33px;
+}
+
+.citation_pagination {
+    height: 4px;
+    width: 38px;
+    background-color: rgba(214, 214, 214, 1);
+    display: inline-block;
+    margin-right: 11px;
+}
+
+.citation_pagination:hover {
+    background-color: rgba(241, 109, 127, 1);
+}
+
+.citation_pagination_active {
+    background-color: rgba(241, 109, 127, 1);
+}
+
+.subscribe_block {
+    margin-top: 148px;
+    padding-left: 92px;
+}
+
+.h4_subscribe {
+    font-size: 24px;
+    color: rgba(34, 34, 36, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.h5_subscribe {
+    font-size: 14px;
+    color: rgba(34, 34, 36, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+}
+
+.form_subscribe {
+    display: flex;
+    margin-top: 35px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.email_subscribe {
+    height: 44px;
+    width: 308px;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+    background-color: rgba(225, 225, 225, 1);
+    border: none;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    color: rgba(34, 34, 36, 1);
+}
+
+.button_subscribe {
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+    margin-left: -2px;
+    border: none;
+}
+
+.footer {
+    margin-top: 109px;
+}
+
+.footer_information {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 93px;
+}
+
+.footer_p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(137, 137, 137, 1);
+    letter-spacing: 0.03em;
+    line-height: 24px;
+}
+
+.footer_rights {
+    background-color: rgba(230, 230, 230, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+
+.footer_column_1 {
+    max-width: 430px;
+    margin-right: 61.4px;
+}
+
+.footer_column_2 {
+    margin-right: 129px;
+}
+
+.footer_column_3 {
+    margin-right: 80px;
+}
+
+.footer_h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(241, 109, 127, 1);
+    letter-spacing: 0.03em;
+    line-height: 26px;
+    margin-bottom: 17px;
+}
+
+.footer_p_rights {
+    font-size: 16px;
+    color: rgba(122, 122, 122, 1);
+    letter-spacing: 0.03em;
+    font-weight: 600;
+}
+
+.footer_menu_link {
+    font-size: 16px;
+    color: rgba(137, 137, 137, 1);
+    letter-spacing: 0.03em;
+    line-height: 42px;
+}
+
+.social_links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 42px;
+    color: rgba(178, 178, 178, 1);
+}
+
+.social_link:hover {
+    background-color: rgba(241, 109, 127, 1);
+    color: rgba(247, 247, 248, 1);
 }
