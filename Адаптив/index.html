@@ -15,13 +15,38 @@
     <div class="header_logo">
             <a href="index.html"><img src="img/logo_white.png" alt="logo_white"></a>
         </div>
-        <details class="header_menu">
-            <summary class="header_menu__summary">
-                <div class="header_menu__block"></div>
-                <div class="header_menu__block"></div>
-                <div class="header_menu__block"></div>
-            </summary>
-        </details>
+        <input id="menu_switcher" type="checkbox">
+        <label class="menu_open" for="menu_switcher"><i class="fas fa-bars fa-bars_header"></i></label>
+        <nav class="nav">
+            <a href="index.html"><img src="img/logo_mobile.png" alt="logo" class="mobile_logo center"></a>
+            <ul class="menu center">
+                <li class="menu_list"><a href="index.html" class="menu_link">Главная</a></li>
+                <li class="menu_list"><a href="#" class="menu_link">Описание</a></li>
+                <li class="menu_list"><a href="#" class="menu_link">Преимущества</a></li>
+                <li class="menu_list"><a href="#" class="menu_link">Отзывы</a></li>
+                <li class="menu_list"><a href="#" class="menu_link">Партнёры</a></li>
+                <li class="menu_list"><a href="#" class="menu_link">Гарантии</a></li>
+                <li class="menu_list"><a href="#" class="menu_link">FAQ</a></li>
+            </ul>
+            <h1 class="footer_h1 center">ОСТАЛИСЬ ВОПРОСЫ?</h1>
+            <form action="#" class="footer_form center">
+                <label>
+                    <input type="text" placeholder="Ваш телефон" class="input footer_input">
+                </label>
+                <button type="submit" class="button footer__button">
+                    заказать звонок
+                </button>
+                <label class="footer_checkbox_label">
+                    <input type="checkbox" class="footer_checkbox"><p>Я согласен на обработку персональных данных</p>
+                </label>
+            </form>
+            <div class="mobile_links center">
+                <a href="" class="mobile_sociallink"><i class="fab fa-vk"></i></a>
+                <a href="" class="mobile_sociallink"><i class="fab fa-instagram"></i></a>
+                <a href="" class="mobile_sociallink"><i class="fab fa-facebook"></i></a>
+            </div>
+            <label class="menu_close" for="menu_switcher"><i class="far fa-window-close fa-window-close_header"></i></label>
+        </nav>
     </div>
     <h1 class="header_h1">
         ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ
@@ -209,9 +234,9 @@
 
     <div class="footer_copylinks">
         <p class="footer_copy">&copy;&nbsp;Сами копипастим и вам разрешаем</p>
-        <a href="" class="sociallink"></a>
-        <a href="" class="sociallink"></a>
-        <a href="" class="sociallink"></a>
+        <a href="" class="sociallink"><i class="fab fa-vk"></i></a>
+        <a href="" class="sociallink"><i class="fab fa-instagram"></i></a>
+        <a href="" class="sociallink"><i class="fab fa-facebook"></i></a>
         <p class="footer_year"><span>2020</span>
             <span class="footer_last">Задизайнено мной</span></p>
     </div>
